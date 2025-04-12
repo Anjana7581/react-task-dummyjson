@@ -1,10 +1,14 @@
-import UsersTable from './components/UserTable/UserTable';
+import Navbar from './components/Navbar';
+import UsersTable from './components/UserTable/UsersTable';
 
 function App() {
   return (
-    <div className="container mx-auto p-4">
+    <div className="min-h-screen bg-gray-50">
+    <Navbar/>
+    <main className="max-w-7xl mx-auto px-4 py-6">
       <UsersTable />
-    </div>
+    </main>
+  </div>
   );
 }
 
